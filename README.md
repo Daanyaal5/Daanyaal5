@@ -23,4 +23,5 @@ Seeking **co-op opportunities** where I can learn fast, contribute meaningfully,
 
 ## 📫 Contact
 - **Email:** dn981756@dal.ca  
-- **LinkedIn:** https://www.linkedin.com/in/daanyaal5/ 
+- **LinkedIn:** https://www.linkedin.com/in/daanyaal5/
+- **Portfolio:** https://daanyaalsportfolio.vercel.app/
