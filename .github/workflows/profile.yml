@@ -1,0 +1,60 @@
+name: Update profile charts
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ["assets/stats.svg", "assets/languages.svg", "assets/activity.svg"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-charts
+  cancel-in-progress: true
+
+jobs:
+  charts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate stats, languages and activity charts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python .github/scripts/charts.py
+
+      - name: Commit charts if they changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/languages.svg assets/activity.svg
+          git diff --cached --quiet || git commit -m "Update profile charts"
+          git push
+
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#ff3d81&color_dots=#161b22,#4a1d3f,#8a2a5e,#d6336f,#ffb21e
+            dist/snake-light.svg?color_snake=#ff3d81&color_dots=#ebedf0,#ffd9a8,#ffb21e,#ff7a3d,#ff3d81
+
+      - name: Publish snake to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update contribution snake
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
