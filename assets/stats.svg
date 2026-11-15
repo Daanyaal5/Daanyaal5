@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="428" height="242" viewBox="0 0 428 242" role="img" aria-label="GitHub stats">
+  <defs>
+    <linearGradient id="sunset" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#ffb21e"/><stop offset="0.55" stop-color="#ff3d81"/><stop offset="1" stop-color="#7b3cff"/>
+    </linearGradient>
+    <linearGradient id="rise" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0" stop-color="#ffb21e"/><stop offset="0.6" stop-color="#ff3d81"/><stop offset="1" stop-color="#7b3cff"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .title { font-size: 15px; font-weight: 700; letter-spacing: 2px; fill: #f3eee6; }
+      .muted { font-size: 12px; fill: #a8a1b4; }
+      .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes rise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+      .fade { animation: fade .8s ease both; }
+      @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+  </defs>
+  <clipPath id="card"><rect x="0" y="0" width="428" height="242" rx="12"/></clipPath>
+  <rect x="0.5" y="0.5" width="427" height="241" rx="12" fill="#0f0d16" stroke="#2a2536"/>
+  <rect x="0" y="0" width="428" height="4" fill="url(#sunset)" clip-path="url(#card)"/>
+  <text x="24" y="36" class="title">GITHUB STATS</text>
+  <g class="fade" style="animation-delay:0.00s"><rect x="24" y="64" width="184" height="58" rx="8" fill="#17141f"/><rect x="24" y="64" width="4" height="58" rx="2" fill="#ffb21e"/><text x="40" y="96" style="font-size:24px;font-weight:800;fill:#f3eee6">51</text><text x="40" y="113" class="muted">Contributions (last year)</text></g>
+  <g class="fade" style="animation-delay:0.12s"><rect x="220" y="64" width="184" height="58" rx="8" fill="#17141f"/><rect x="220" y="64" width="4" height="58" rx="2" fill="#ff3d81"/><text x="236" y="96" style="font-size:24px;font-weight:800;fill:#f3eee6">6</text><text x="236" y="113" class="muted">Public repositories</text></g>
+  <g class="fade" style="animation-delay:0.24s"><rect x="24" y="134" width="184" height="58" rx="8" fill="#17141f"/><rect x="24" y="134" width="4" height="58" rx="2" fill="#7b3cff"/><text x="40" y="166" style="font-size:24px;font-weight:800;fill:#f3eee6">4 days</text><text x="40" y="183" class="muted">Longest streak</text></g>
+  <g class="fade" style="animation-delay:0.36s"><rect x="220" y="134" width="184" height="58" rx="8" fill="#17141f"/><rect x="220" y="134" width="4" height="58" rx="2" fill="#79d96b"/><text x="236" y="166" style="font-size:24px;font-weight:800;fill:#f3eee6">11</text><text x="236" y="183" class="muted">Best week</text></g>
+  <text x="24" y="226" class="muted">Updated daily · Nov 15, 2026</text>
+</svg>

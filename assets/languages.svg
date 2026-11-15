@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="428" height="242" viewBox="0 0 428 242" role="img" aria-label="Top languages">
+  <defs>
+    <linearGradient id="sunset" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#ffb21e"/><stop offset="0.55" stop-color="#ff3d81"/><stop offset="1" stop-color="#7b3cff"/>
+    </linearGradient>
+    <linearGradient id="rise" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0" stop-color="#ffb21e"/><stop offset="0.6" stop-color="#ff3d81"/><stop offset="1" stop-color="#7b3cff"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .title { font-size: 15px; font-weight: 700; letter-spacing: 2px; fill: #f3eee6; }
+      .muted { font-size: 12px; fill: #a8a1b4; }
+      .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes rise { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+      .fade { animation: fade .8s ease both; }
+      @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+  </defs>
+  <clipPath id="card"><rect x="0" y="0" width="428" height="242" rx="12"/></clipPath>
+  <rect x="0.5" y="0.5" width="427" height="241" rx="12" fill="#0f0d16" stroke="#2a2536"/>
+  <rect x="0" y="0" width="428" height="4" fill="url(#sunset)" clip-path="url(#card)"/>
+  <text x="24" y="36" class="title">TOP LANGUAGES</text>
+  <clipPath id="bar"><rect x="24" y="56" width="380" height="12" rx="6"/></clipPath><g clip-path="url(#bar)">
+  <rect class="fade" style="animation-delay:0.00s" x="24.00" y="56" width="158.40" height="12" fill="#ffb21e"/>
+  <rect class="fade" style="animation-delay:0.08s" x="182.40" y="56" width="93.84" height="12" fill="#ff3d81"/>
+  <rect class="fade" style="animation-delay:0.16s" x="276.24" y="56" width="44.70" height="12" fill="#7b3cff"/>
+  <rect class="fade" style="animation-delay:0.24s" x="320.93" y="56" width="39.13" height="12" fill="#2fc5e8"/>
+  <rect class="fade" style="animation-delay:0.32s" x="360.06" y="56" width="32.86" height="12" fill="#79d96b"/>
+  <rect class="fade" style="animation-delay:0.40s" x="392.92" y="56" width="11.08" height="12" fill="#ff7a3d"/>
+  </g>
+  <g class="fade" style="animation-delay:0.30s"><circle cx="30" cy="94" r="6" fill="#ffb21e"/><text x="44" y="98" style="font-size:13px;fill:#f3eee6;font-weight:600">Java</text><text x="200" y="98" text-anchor="end" class="muted">41.7%</text></g>
+  <g class="fade" style="animation-delay:0.36s"><circle cx="226" cy="94" r="6" fill="#ff3d81"/><text x="240" y="98" style="font-size:13px;fill:#f3eee6;font-weight:600">JavaScript</text><text x="396" y="98" text-anchor="end" class="muted">24.7%</text></g>
+  <g class="fade" style="animation-delay:0.42s"><circle cx="30" cy="124" r="6" fill="#7b3cff"/><text x="44" y="128" style="font-size:13px;fill:#f3eee6;font-weight:600">TypeScript</text><text x="200" y="128" text-anchor="end" class="muted">11.8%</text></g>
+  <g class="fade" style="animation-delay:0.48s"><circle cx="226" cy="124" r="6" fill="#2fc5e8"/><text x="240" y="128" style="font-size:13px;fill:#f3eee6;font-weight:600">HTML</text><text x="396" y="128" text-anchor="end" class="muted">10.3%</text></g>
+  <g class="fade" style="animation-delay:0.54s"><circle cx="30" cy="154" r="6" fill="#79d96b"/><text x="44" y="158" style="font-size:13px;fill:#f3eee6;font-weight:600">CSS</text><text x="200" y="158" text-anchor="end" class="muted">8.6%</text></g>
+  <g class="fade" style="animation-delay:0.60s"><circle cx="226" cy="154" r="6" fill="#ff7a3d"/><text x="240" y="158" style="font-size:13px;fill:#f3eee6;font-weight:600">Python</text><text x="396" y="158" text-anchor="end" class="muted">2.9%</text></g>
+</svg>
