@@ -24,5 +24,5 @@
   <g class="fade" style="animation-delay:0.12s"><rect x="220" y="64" width="184" height="58" rx="8" fill="#17141f"/><rect x="220" y="64" width="4" height="58" rx="2" fill="#ff3d81"/><text x="236" y="96" style="font-size:24px;font-weight:800;fill:#f3eee6">6</text><text x="236" y="113" class="muted">Public repositories</text></g>
   <g class="fade" style="animation-delay:0.24s"><rect x="24" y="134" width="184" height="58" rx="8" fill="#17141f"/><rect x="24" y="134" width="4" height="58" rx="2" fill="#7b3cff"/><text x="40" y="166" style="font-size:24px;font-weight:800;fill:#f3eee6">4 days</text><text x="40" y="183" class="muted">Longest streak</text></g>
   <g class="fade" style="animation-delay:0.36s"><rect x="220" y="134" width="184" height="58" rx="8" fill="#17141f"/><rect x="220" y="134" width="4" height="58" rx="2" fill="#79d96b"/><text x="236" y="166" style="font-size:24px;font-weight:800;fill:#f3eee6">11</text><text x="236" y="183" class="muted">Best week</text></g>
-  <text x="24" y="226" class="muted">Updated daily · Nov 20, 2026</text>
+  <text x="24" y="226" class="muted">Updated daily · Nov 21, 2026</text>
 </svg>
